@@ -1,11 +1,11 @@
 
-- Create "openidconsumer" directory under /opt/zimbra/lib/ext
+- Create "openidconsumer" directory under /opt/zextras/lib/ext
 
-- Copy "zm-openid-consumer-store-*.jar" to /opt/zimbra/lib/ext/openidconsumer directory
+- Copy "zm-openid-consumer-store-*.jar" to /opt/zextras/lib/ext/openidconsumer directory
 
-- Copy openid4java-1.0.0.jar and guice-2.0.jar to /opt/zimbra/jetty/common/lib directory
+- Copy openid4java-1.0.0.jar and guice-2.0.jar to /opt/zextras/jetty/common/lib directory
 
-- Copy "formredirection.jsp" file to /opt/zimbra/jetty/webapps/zimbra/public directory
+- Copy "formredirection.jsp" file to /opt/zextras/jetty/webapps/zimbra/public directory
 
 - Configure allowed OpenID Provider URLs for the domain:
 

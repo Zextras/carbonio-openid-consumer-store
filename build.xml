@@ -3,7 +3,7 @@
 	<property name="ext.name" value="openidconsumer"/>
 	<property name="extension.deploy.dir" location="${zimbra.home.dir}/lib/ext/${ext.name}"/>
 	<property name="openid.dist.dir" location="${dist.dir}/extensions-extra/openidconsumer"/>
-	<!-- These two properties are used by zimbra-jar target to create jar manifest -->
+	<!-- These two properties are used by zextras-jar target to create jar manifest -->
 	<property name="implementation.title" value="${ext.name}"/>
 	<property name="zimbra.extension.class" value="com.zimbra.cs.security.openid.consumer.OpenIDConsumerExtension"/>
 
@@ -19,7 +19,7 @@
 		<copy file="${build.dir}/${jar.file}" todir="${openid.dist.dir}"/>
 	</target>
 
-	<target name="jar" depends="compile,zimbra-jar" description="Creates the jar file" />
+	<target name="jar" depends="compile,zextras-jar" description="Creates the jar file" />
 	<target name="dist-package" depends="jar" description="Populate directories">
 		<ivy:install organisation="org.openid4java" module="openid4java" revision="1.0.0" settingsRef="dev.settings" from="chain-resolver" to="build-dist" overwrite="true" transitive="false" type="jar"/>
 		<ivy:install organisation="com.google.inject" module="guice" revision="2.0" settingsRef="dev.settings" from="chain-resolver" to="build-dist" overwrite="true" transitive="true" type="jar"/>
